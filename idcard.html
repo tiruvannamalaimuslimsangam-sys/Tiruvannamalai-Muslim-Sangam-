@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TMS உறுப்பினர் அடையாள அட்டை</title>
+
+<link rel="stylesheet" href="css/idcard.css">
+</head>
+
+<body>
+
+<div class="id-card">
+
+<div class="card-header">
+<h2>திருவண்ணாமலை முஸ்லிம் சங்கம்</h2>
+<h3>(TMS)</h3>
+</div>
+
+<div class="photo-box">
+<img id="memberPhoto" src="images/user.png" alt="Member Photo">
+</div>
+
+<div class="member-details">
+
+<p><strong>உறுப்பினர் எண் :</strong>
+<span id="memberNo"></span></p>
+
+<p><strong>பெயர் :</strong>
+<span id="memberName"></span></p>
+
+<p><strong>மொபைல் :</strong>
+<span id="memberMobile"></span></p>
+
+<p><strong>முகவரி :</strong>
+<span id="memberAddress"></span></p>
+
+<p id="designationBox">
+<strong>பதவி :</strong>
+<span id="memberDesignation"></span>
+</p>
+
+</div>
+<div class="signature-section">
+
+<div class="signature-box">
+
+<img src="images/president-sign.png"
+alt="President Signature"
+class="signature">
+
+<p><strong>தலைவர்</strong></p>
+
+<p>திருவண்ணாமலை முஸ்லிம் சங்கம்</p>
+
+</div>
+
+<div class="signature-box">
+
+<img src="images/secretary-sign.png"
+alt="Secretary Signature"
+class="signature">
+
+<p><strong>பொதுச் செயலாளர்</strong></p>
+
+<p>திருவண்ணாமலை முஸ்லிம் சங்கம்</p>
+
+</div>
+
+</div>
+
+<div class="card-footer">
+
+<button onclick="window.print()">
+🖨️ Print ID Card
+</button>
+
+</div>
+</div>
+
+<script type="module" src="idcard.js"></script>
+
+</body>
+</html>
