@@ -126,7 +126,7 @@ const memberNo =
 "TMS-2026-" +
 String(members.size + 1).padStart(4,"0");
 
-await addDoc(collection(db,"members"),{
+const docRef = await addDoc(collection(db,"members"),{
 
 memberNo: memberNo,
 
@@ -141,10 +141,9 @@ address: document.getElementById("address").value,
 designation: document.getElementById("designation").value
 
 });
-
 alert("உறுப்பினர் வெற்றிகரமாக பதிவு செய்யப்பட்டார்.\n\nஉறுப்பினர் எண் : " + memberNo);
 
-form.reset();
+window.location.href = "idcard.html?id=" + docRef.id;
 
 });
 
